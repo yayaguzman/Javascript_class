@@ -313,6 +313,7 @@ else{
 console.log(resultado);
 
 //second option "ask why it doesnt print and how show the score"
+/*
 if(scoreFirstPlayer > scoreSecondPlayer ){
   console.log = ("First Player is the winner with" + " " + "--" + " " + "points");
 }
@@ -322,6 +323,7 @@ if(scoreFirstPlayer === scoreSecondPlayer ){
 if(scoreFirstPlayer < scoreSecondPlayer ){
   console.log = ("Second Player is the winner with" + " " + "--" + " " + "points");
 }
+*/
 
 /*teacher example
 let myAge = 42;
@@ -343,43 +345,95 @@ if (myScore < player1Score) {
 
 //if else
 
-/*teacher example
-let myAge = 42;
-let myHeight = 160;
-let player1Age = 35;
-let player1Height = 174;
-let myScore = myHeight + (5 * myAge);
-let player1Score = player1Age + (5 * player1Height);
-if (myScore > player1Score) {
-    console.log("I win!");
-}
-if (myScore === player1Score) {
-    console.log("It's a draw!");
-}
-if (myScore < player1Score) {
-    console.log("I lost");
-}
-*/
-
-//if else
-
-/*
 let temperature2 = 30;
-if (temperature > 25) {
+if (temperature2 > 25) {
   console.log("Go swimming");
 } else {
   console.log("Go biking");
 }
 
-if (day === 'Saturday') {
-  console.log('Do all the shopping.');
-} else if (day === 'Sunday') {
-  console.log('Relax!');
+let day= "Saturday";
+if (day === "Saturday") {
+  console.log("Do all the shopping.");
+} else if (day === "Sunday") {
+  console.log("Relax!");
 } else {
-  console.log('Wake up and go to work!');
+  console.log("Wake up and go to work!");
+  }
 
-
+/*
+EXERCISE
+Make three if statements
+Make a "Good day" greeting if the hour is less than 18
+Make a statement that only says “Hello” to someone with your name.
+Make a statement that prints "I am younger" if your age is less than your neighbor's
 */
+
+let myName3= "Yadira";
+
+if (myName3 === "Yadira") {
+  console.log("Hello " + myName3);
+}
+
+
+let time= 8;
+
+if (time <= 18) {
+  console.log("Good day");
+} else{
+  console.log("Good evening");
+}
+
+
+let myAge3= 39;
+let myNeighborAge= 52;
+
+if (myAge3 < myNeighborAge){
+  console.log("I am younger");
+} else{
+  console.log("I am older");
+}
+
+//Describe the weather based on the temperature:
+//Above 30
+//Above 20
+//Above 5
+//Everything else
+
+let temperature3= 35;
+
+if (temperature3 > -100 && temperature3 < 5){
+  console.log("it is cold");
+} else if (temperature3 > 5 && temperature3 <20){
+  console.log("the weather is ok, not too cold and not too hot");
+} else if (temperature3 > 20 && temperature3 <30){
+  console.log("it is getting hot!");
+} else {
+  console.log ("it is super hot!!!");
+}
+
+/*teacher example
+
+let temperature = 35;
+
+if (temperature > 30) {
+  console.log("too hot!!!");
+} else if (temperature > 20) {
+  console.log("it's warm");
+} else if (temperature > 5) {
+  console.log("perfect.");
+} else {
+  console.log("it's a bit chilly.")
+}
+*/
+
+
+
+
+
+
+
+
 
 //----------------------------------------------------------------------------------
 
