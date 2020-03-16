@@ -314,13 +314,13 @@ console.log(resultado);
 
 //second option "ask why it doesnt print and how show the score"
 /*
-if(scoreFirstPlayer > scoreSecondPlayer ){
+if(scoreFirstPlayer > scoreSecondPlayer ) {
   console.log = ("First Player is the winner with" + " " + "--" + " " + "points");
 }
-if(scoreFirstPlayer === scoreSecondPlayer ){
+if(scoreFirstPlayer === scoreSecondPlayer ) {
   console.log = ("All players are winners!!! with" + " " + "--" + " " + "points");
 }
-if(scoreFirstPlayer < scoreSecondPlayer ){
+if(scoreFirstPlayer < scoreSecondPlayer ) {
   console.log = ("Second Player is the winner with" + " " + "--" + " " + "points");
 }
 */
@@ -369,26 +369,26 @@ Make a statement that only says “Hello” to someone with your name.
 Make a statement that prints "I am younger" if your age is less than your neighbor's
 */
 
-let myName3= "Yadira";
+let myName3 = "Yadira";
 
 if (myName3 === "Yadira") {
   console.log("Hello " + myName3);
 }
 
 
-let time= 8;
+let time = 8;
 
 if (time <= 18) {
   console.log("Good day");
-} else{
+} else {
   console.log("Good evening");
 }
 
 
-let myAge3= 39;
-let myNeighborAge= 52;
+let myAge3 = 39;
+let myNeighborAge = 52;
 
-if (myAge3 < myNeighborAge){
+if (myAge3 < myNeighborAge) {
   console.log("I am younger");
 } else{
   console.log("I am older");
@@ -400,16 +400,16 @@ if (myAge3 < myNeighborAge){
 //Above 5
 //Everything else
 
-let temperature3= 35;
+let temperature3 = 35;
 
-if (temperature3 > -100 && temperature3 < 5){
+if (temperature3 > -100 && temperature3 < 5) {
   console.log("it is cold");
-} else if (temperature3 > 5 && temperature3 <20){
+} else if (temperature3 > 5 && temperature3 <20) {
   console.log("the weather is ok, not too cold and not too hot");
-} else if (temperature3 > 20 && temperature3 <30){
+} else if (temperature3 > 20 && temperature3 <30) {
   console.log("it is getting hot!");
 } else {
-  console.log ("it is super hot!!!");
+  console.log("it is super hot!!!");
 }
 
 /*teacher example
@@ -427,18 +427,57 @@ if (temperature > 30) {
 }
 */
 
-
-
-
-
-
-
-
-
 //----------------------------------------------------------------------------------
 
 // class 4- 
 //Functions
-//Functions always have parentesis ()
-//everything after return doesnt count
-//Function whatIsMyFavColor () { }
+/*
+EXERCISE
+Simple program that calculates the bonus an employee will get at the end of the year.
+(regular day: 1€, extra: 3€ bonus)
+a pay raise, if more than 250€ bonus.
+nothing, if less than 100€.
+a chocolate box, for any other bonus.
+What does an employee with 200 regular days and 20 extra get?
+*/
+
+let regularDay = 1;
+let extraDay = 3;
+let employeeBonus = (regularDay * 200) + (extraDay * 20);
+
+if (employeeBonus < 100) {
+  console.log("Sorry, you do not get any bonus");
+} else if (employeeBonus > 250) {
+  console.log("Great, you get a pay raise with!! " + employeeBonus + " " + "bonus" );
+} else{
+  console.log("You get a chocolate box");
+}
+
+/*
+Functions always have parentesis ()
+everything after return doesnt count
+A function is a reusable block of code.
+
+A very simple function would be:
+
+function myFunction() {
+  console.log("I am in a function!");
+}
+
+To create a function:
+function
+name of the function
+(param1, param2, ...) parameters are just like variables
+{ ... } the block where we have our code
+we might add a return at the end, depending on what we need.
+
+*/function sayHello() {
+  console.log("Hello There!");
+
+  console.log("...");
+
+  console.log("General Kenobi!");
+}
+
+sayHello();
+
