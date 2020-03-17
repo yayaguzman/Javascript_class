@@ -449,10 +449,12 @@ let employeeBonus = (regularDay * 200) + (extraDay * 20);
 if (employeeBonus < 100) {
   console.log("Sorry, you do not get any bonus");
 } else if (employeeBonus > 250) {
-  console.log("Great, you get a pay raise with!! " + employeeBonus + " " + "bonus" );
+  console.log("Great, you get a pay raise with " + employeeBonus + " " + "bonus!!" );
 } else{
   console.log("You get a chocolate box");
 }
+//Great, you get a pay raise with 260 bonus!!
+
 
 /*
 Functions always have parentesis ()
@@ -527,11 +529,25 @@ console.log("32 degrees: " + celsiusToFahrenheit(32));
 
 /*
 Exercise
-Write a min function that returns the smaller of the two arguments passed to it: I DID NOT UNDERSTAND IT
+Write a min function that returns the smaller of the two arguments passed to it: 
 
 min(1, 2);    // should return 1
 min(100, 99); // should return 99
 min(-10, 0);  // should return -10
+
+---I DID NOT UNDERSTAND IT---
+Solution 
+function min(number1, number2) {
+  if (number1 <= number2) {
+    return number1;
+  } else {
+    return number2;
+  }
+}
+
+console.log('min of 1 and 2 is ' + min(1, 2));
+console.log('min of 100 and 99 is ' + min(100, 99));
+console.log('min of -10 and 0 is ' + min(-10, 0));
 */
 
 
