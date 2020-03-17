@@ -431,7 +431,7 @@ if (temperature > 30) {
 
 // class 4- 
 //Functions
-//Set of statments that perform a task or calculate a value
+//Set of statments that either perform a task or calculate a value
 /*
 EXERCISE
 Simple program that calculates the bonus an employee will get at the end of the year.
@@ -544,6 +544,12 @@ function hola(theName, theAge, theLanguage) {
 }
 
 hola("Claire", 23, "Spanish"); //Hola my name is Claire, I'm 23 years old and I speak Spanish
+
+//calculating a value
+function square(numbers) {
+  return numbers * numbers;
+}
+console.log(square(2)); //4
 
 /*Homework 2
 Change the employee solution from before, and turn it into a function.
