@@ -497,6 +497,7 @@ function sayHello(){
 sayHello();
 The function sayHello does not require any parameters that is why the parenthesis () are empty.
 
+When no return, consolo says indefined
 
 function greet(name){
   console.log("Hello " + name + " !");
@@ -577,16 +578,64 @@ let employeeBonus = (regularDay * 200) + (extraDay * 20);
 if (employeeBonus < 100) {
   console.log("Sorry, you do not get any bonus");
 } else if (employeeBonus > 250) {
-  console.log("Great, you get a pay raise with!! " + employeeBonus + " " + "bonus" );
+  console.log("Great, you get a pay raise with " + employeeBonus + " " + "bonus!!" );
 } else{
   console.log("You get a chocolate box");
 }
 */
 
 
+function employeeBonuss(regularDay, extraDay) {
+  if (employeeBonus < 100) {
+    console.log("Sorry, you do not get any bonus");
+  } else if (employeeBonus > 250) {
+    console.log("Great, you get a pay raise with " + employeeBonus + " " + "bonus!!" );
+  } else{
+    console.log("You get a chocolate box");
+  }
+}
+
+employeeBonuss(1, 3); 
+
+
+//Call a function on the html file
+// this should be on the html <button onclick="onButtonClick()">  Click me  </button>
+
+function onButtonClick() {
+  console.log("You have clicked the button");
+}
 
 
 
+/*
+Class 5 = JAVASCRIPT + HTML
+1. Create a new folder
+2. Create a html file index.html:
+<html>
+<body>
+   <script src="main.js"></script>
+</body>
+</html>
+
+3. Create a JS file main.js:
+console.log("Hello from JavaScript");
+
+ex:
+html:
+<button onclick="onButtonClick()">
+
+js
+function onButtonClick() {
+    console.log("Button has been clicked!");
+}
+
+function myBtnChangeColor_1() {
+    document.body.style.backgroundColor = "white";
+}
+
+--------------------
+
+Class 6= LOOPS
 
 
 
