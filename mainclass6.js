@@ -133,3 +133,41 @@ for (var fizz = 1; fizz<100; fizz++) {
   }
 
 }
+
+/*
+OPERATORS
+Numerical + - * /
+Comparison === strict equality  !== strict inequality  < > <= >= greater / less or equal
+Logical || or  && and ! not
+Combined 	+= -= *= /= ++   
+
+Operator ++ and -- increase (or decrease) the value of a variable by 1
+
+++ 
+let myAge = 42;
+myAge++; // same as myAge = myAge + 1
+
+*=
+a *= 2 count++
+
+/=
+let price = 10;
+// there's a 50 percent sale!
+price /= 2;
+Result: 5
+
+
+RULES OF: if, else if, else:
+if (condition MUST BE A BOOLEAN) {
+  stament
+}
+else if (anotherCondition) {
+  stament
+}
+else if (yetAnotherCondition) {
+  stament
+}
+else {
+  stament
+}
+*/
