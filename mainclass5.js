@@ -1,4 +1,33 @@
 
+/*
+Class 5 = JAVASCRIPT + HTML
+1. Create a new folder
+2. Create a html file index.html:
+<html>
+<body>
+   <script src="main.js"></script>
+</body>
+</html>
+
+3. Create a JS file main.js:
+console.log("Hello from JavaScript");
+
+ex:
+html:
+<button onclick="onButtonClick()">
+
+js
+function onButtonClick() {
+    console.log("Button has been clicked!");
+}
+
+function myBtnChangeColor_1() {
+    document.body.style.backgroundColor = "white";
+}
+
+--------------------
+
+
 /*call on a function from an html file
 function myBtnChangeColor_1() {
     document.body.style.backgroundColor = "white";
@@ -60,65 +89,12 @@ function changeColor_part1(color) {
     }
 
 
-/* the answer if forever 0, it keeps on executing
-    let i=0;
-    while(i<2){
-        console.log(i);
-    }
+
+    /* Homework:
+This is a real interview question for a Junior JavaScript developer:
+
+Print all the numbers from 1 to 100 to console
+If the number is divisible by 3, print “Fizz” instead
+If the number is divisible by 5 (and not by 3), print “Buzz” instead
+If the number is divisible by both 3 and 5, print “FizzBuzz” instead
 */
-
-//5 is the good answer
-
-
-/*
-let i=1;
-while(i<6){
-    console.log(i);
-    i++;
-}
-  */
-
-  let number=1;
-  while(number<6){
-      console.log("Yadira");
-      number++;
-  }
-
-
-let numbers=1;
-  while(numbers<11){
-      console.log(numbers*numbers);
-      numbers++;
-  }
-
-
-  let star="*";
-  for(pyramid = 0; pyramid < 6; pyramid++) {
-      console.log(star += "*");
-  }
-
-
-  /*
-
-  let star="*";
-  let pyramid;
-  for(pyramid = 1; pyramid < 6; pyramid++) {
-      console.log(star + pyramid);
-  }
-  */
-
-
-
-
-
-/*var text = "";
-var i;
-for (i = 0; i < 5; i++) {
-  text += "The number is " + i + "<br>";
-}
-
-//for (let i = 0; i < 1000; i++) { console.log(i); }
-  
-
-
- */

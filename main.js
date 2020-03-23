@@ -598,53 +598,10 @@ function employeeBonuss(regularDay, extraDay) {
 employeeBonuss(1, 3); 
 
 
-//Call a function on the html file
-// this should be on the html <button onclick="onButtonClick()">  Click me  </button>
-
-function onButtonClick() {
-  console.log("You have clicked the button");
-}
 
 
 
-/*
-Class 5 = JAVASCRIPT + HTML
-1. Create a new folder
-2. Create a html file index.html:
-<html>
-<body>
-   <script src="main.js"></script>
-</body>
-</html>
-
-3. Create a JS file main.js:
-console.log("Hello from JavaScript");
-
-ex:
-html:
-<button onclick="onButtonClick()">
-
-js
-function onButtonClick() {
-    console.log("Button has been clicked!");
-}
-
-function myBtnChangeColor_1() {
-    document.body.style.backgroundColor = "white";
-}
-
---------------------
-
-Class 6= LOOPS
-
-
-
-
-
-
-
-
-/*
+/* objects
 Object literal
 let person {
   name: "Jean",     //this are keys or properties this object has 2 keys
