@@ -124,15 +124,24 @@ If the number is divisible by both 3 and 5, print “FizzBuzz” instead
 */
 
 //let fizz="Fizz";
-for (var fizz = 1; fizz<100; fizz++) {
-  if (fizz%3 === 0) {
-    console.log("Fizz");
+for (var fizz = 1; fizz<101; fizz++) {
+  if (fizz%5 === 0 && fizz%3 === 0) {
+    console.log("FizzBuzz");
   }
-  else if (fizz%5 === 0){
-    console.log("FizzBuzz")
+  else if (fizz%3 === 0) {
+    console.log("Fizz")
   }
-
+  else if(fizz%5 === 0) {
+    console.log("Buzz")
+  }
+  else {
+    console.log(fizz)
+  }
 }
+
+
+
+
 
 /*
 OPERATORS
@@ -140,6 +149,7 @@ Numerical + - * /
 Comparison === strict equality  !== strict inequality  < > <= >= greater / less or equal
 Logical || or  && and ! not
 Combined 	+= -= *= /= ++   
+&&
 
 Operator ++ and -- increase (or decrease) the value of a variable by 1
 
