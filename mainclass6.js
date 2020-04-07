@@ -111,7 +111,48 @@ executes the body. After every loop, it executes the update part.
 
 We use a for loop if we know in advance how often it will be executed.
 for (let i = 0; i < 1000; i++) { console.log(i); }
+
+Numbers - Exponents & Remainders
+Two other really useful arithmetic operators are:
+exponentiation operator (**) 
+and the modulus (remainder) operator (%).
+The exponentiation operator (**) raises the first number to the power of the second number.
+The modulus (remainder) operator (%) returns the remainder of dividing the first number by the second number.
+
 */
+2 ** 3 = 8
+2 ** 4 = 16
+4 % 3 = 1 // 3 goes into 4 one then remainer of 1
+4 % 5 = 4 // 5 is larger than 4, so technically it can't go into 4 at all, so the remainder would be 4.
+const fiveSquared = 5 ** 2; // 25
+const eightCubed = 8 ** 3; // 512
+const sevenToTheSixth = 7 ** 6; // 117649
+const eightyThreeModSix = 83 % 6; // 5
+const sixtyModNine = 60 % 9; // 9 goes 6 times into 60 and the reminder is 6
+
+
+//Inrementor & decrementor
+let num = 10;
+
+num++
+console.log(num) // => 11
+
+let numM = 10;
+
+numM--
+console.log(numM) // => 9
+
+
+//asigment operator   += - addition
+/*-= - subtraction
+*= - multiplication
+/= - division */
+let num = 5;
+
+num += 10 //same as: num = num + 10
+console.log(num) // => 15  
+
+
 
 
 /* Homework:
@@ -131,7 +172,7 @@ for (var fizz = 1; fizz<101; fizz++) {
   else if (fizz%3 === 0) {
     console.log("Fizz")
   }
-  else if(fizz%5 === 0) {
+  else if (fizz%5 === 0) {
     console.log("Buzz")
   }
   else {
@@ -139,11 +180,230 @@ for (var fizz = 1; fizz<101; fizz++) {
   }
 }
 
+//----------------------------------------------------------------------------------------------
+//Class 7 Arrays & Objects
+//EXERCISE 1
+let myFriends= ["Mile", "Mapi", "Jasmine"];
+console.log("Hello" + " " + myFriends[0]);
+console.log("Hello" + " " + myFriends[1]);
+console.log("Hello" + " " + myFriends[2]);
+
+//it is the same as
+//EXERCISE 2
+for (let i = 0; i < myFriends.length; i++) {
+  let allFriends = myFriends[i];
+  console.log("Hello" + " " + allFriends + "! :)");
+}
 
 
+let myFriends2 = ["Mile", "Mapi", "Jasmine"];
+myFriends2.forEach(element => console.log("hello" + " " + element + "!"));
+
+
+let friends = ["Alice", "Bob", "Carol"];
+console.log(friends.length); // 3
+
+//lenght the number of items inside an array
 
 
 /*
+Appending new values
+We can append new values to an array using .push():
+
+let friends = ["Alice", "Bob", "Carol"];
+console.log(friends.length); // 3
+
+friends.push("David");
+
+console.log(friends.length); // 4
+console.log(friends[3]); // David
+
+*/
+
+// EXERCISE 3
+
+/*Exercise 3
+Create an array containing a few numbers, ex [3, 2, 9, 5, 6]
+
+Output the last element of your array
+Output the sum of all the numbers in the array
+Output the largest number of the array
+Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
+*/
+
+//let myNumbers=[6, 2, 9, 5, 8, 10];
+//console.log("first " + myNumbers.length - 1);
+
+/*
+Create a new array containing only numbers of the original array that are smaller than 5
+ex: given input [1, 3, 7, 2, 9, 5], return [1, 3, 2]
+Write a function that takes a number and an array of numbers as input parameter. Return the index of the number if it is in the array, otherwise return -1
+ex: given inputs 5 and [2, 1, 5, 6, 3], return 2
+*/
+
+
+
+let myNumbers = [8, 2, 9, 1]; //sum = 20
+let sum= 0; //container to add all the numbers to it
+
+for (let i = 0; i < myNumbers.length; i++) {
+  sum += myNumbers[i];
+}
+console.log(sum);
+
+
+/*
+
+You have written a program that tells you how likely it is to rain outside (in percent %).
+Unfortunately, it is not very accurate, it sometimes gives you more than 100% or less that 0%.
+These are the values you got:
+[55.1, 45.6, 145.01, 10, -0.5, 0.001, 110, -0.001]
+*/
+
+let weather = [55.1, 45.6, 145.01, 10, -0.5, 0.001, 110, -0.001];
+
+for (i = 0; i< weather.length; i++) {
+  if (weather[i] < 0){
+    weather[i] = 0;
+  }
+  if (weather[i] > 100){
+    weather[i] = 100;
+  }
+}
+console.log(weather); //(8) [55.1, 45.6, 100, 10, 0, 0.001, 100, 0]
+
+
+
+
+let names = ["Maria", "Julien", "Simon"];
+let ages = [54, 27, 66];
+
+function introduce(name, age) {
+  console.log("my name is "  + name + " I'm " + age + " years old");
+}
+
+for (let i = 0; i < names.length; i++) {
+  introduce(names[i], ages[i]);
+}
+//let introduce = [[Maria, 23],[Juan, 25],[Luis, 26]];
+
+
+let mothers = ["Ana", "Lana", "Luli"];
+let theirAges = [1, 2, 4];
+let children = "children";
+
+
+function numberOfKids(motherNames, kids){
+  console.log("my name is " + motherNames + " " + "and I have " + kids + " " + children);
+}
+
+for(let i=0; i< theirAges.length; i++){
+  numberOfKids(mothers[i], theirAges[i]);
+  if (theirAges[i] < 2) {
+    children = "child";
+  }
+}
+
+//Objects --------------------------
+
+let me = {
+  name: "Lucy",
+  age: 34,
+  hairColor: "red",
+  eyeColor: "green"
+};
+console.log(me);
+
+
+// use objects instead of these arrays
+// ['John Carmack', 'Frances Northcutt', 'John Nash'];
+// [23, 25, 66];
+
+// don't forget to loop over the objects and introduce everyone.
+
+let john = {
+  name: "John",
+  lastName: "Carmack",
+  age: 23
+};
+
+let frances = {
+  name: "Frances",
+  lastName: "Northcutt",
+  age: 25
+};
+
+let nash = {
+  name: "john",
+  lastName: "Nash",
+  age: 66
+};
+
+function introduceMe(namess, lastnamess, agess){
+  console.log("Hello, my name is " + namess + " " + lastnamess + " " + "I'm " + agess + " years old");
+}
+
+for(let i=0; i<john.length; i++){
+  introduceMe(john.name, john.lastName, john.age);
+}
+
+
+
+let people = {
+  name: "John",
+  lastName: "Carmack",
+  age: 23
+};
+
+let cat = {
+  name: "Pepe",
+  hobbies: {one:"sleeping", two:"eating", three:"playing"},
+  friends: ["Yin", "Yan", "Yun"],
+  favoriteFood: "carrots",
+  age: 3,
+  color: "white"
+};
+console.log(cat);
+
+
+//numberOfKids(mothers[i], theirAges[i]);
+
+
+/*
+How to call properties in Objects
+var foo = {
+  name: 'kitten',
+  lastName:'Chou'}
+foo.name; // kitten
+foo['name']; // kitten
+
+console.log(foo.name);
+var get = 'name';
+foo[get]; // kitten
+
+foo.1234; // SyntaxError
+foo['1234']; // ¡funciona!
+
+
+let names = ["Maria", "Julien", "Simon"];
+let ages = [54, 27, 66];
+
+function introduce(name, age) {
+  console.log("my name is "  + name + " I'm " + age + " years old");
+}
+
+for (let i = 0; i < names.length; i++) {
+  introduce(names[i], ages[i]);
+}
+*/
+
+/*
+
+let arr = [1, 3, 7, 2, 9, 5];
+for (i = 0; i< 6; i++) {  //same 3 parts in () and separated by ;
+  console.log(arr);
+}
+
 OPERATORS
 Numerical + - * /
 Comparison === strict equality  !== strict inequality  < > <= >= greater / less or equal
