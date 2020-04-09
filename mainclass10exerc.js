@@ -1,8 +1,9 @@
 //Class 10 Exercises
 
 function mySubmit() {
+    event.preventDefault();
     let names = document.getElementById("form1");
-    for (var i = 0; i < names.length; i++) {
+    for (let i = 0; i < names.length; i++) {
          console.log(names[i].value);
     }
 }
