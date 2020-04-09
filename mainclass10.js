@@ -1,65 +1,5 @@
 
 
-/*
-Class 9 - DOM & String Methods -------
-
-JavaScript methods are actions that can be performed on objects
-Two common string methods are toUpperCase and toLowerCase
-
-let favAlbum = "The Rise and Fall of Ziggy Stardust and the Spiders From Mars"
-let upper = favAlbum.toUpperCase();
-console.log(upper);
-*/
-
-//'THE RISE AND FALL OF ZIGGY STARDUST AND THE SPIDERS FROM MARS'
-
-
-/*Operators	
-Logical 	
-|| && !	            a && !b     x >= 5 && x < 15 only used with Boolean
-&& Logical AND (returns true if both booleans are true)     true true = true    true false = false    false false = false
-|| Logical OR  (returns true if at least one is true)       true true = true    true false = true     false  false  = false
-!  Logical NOT (negates a boolean  !true  // false   !false // true)
-
-Exercise
-Implement the following function:
-
-function isInRange(value, range) { YOUR CODE HERE }
-
-isInRange(4, { min: 0, max: 5 }) // should return true
-isInRange(4, { min: 4, max: 5 }) // should return true
-isInRange(4, { min: 6, max: 10 }) // should return false
-isInRange(5, { min: 5, max: 5 }) // should return true
-*/
-
-//SOLUTION 1
-function isInRange(value, range) {
-	return value >= range.min && value <= range.max;
-}
-
-//SOLUTION 2
-function isInRange(value, range) {
-    if (value < range.min) {
-        return false;
-    }
-    if (value > range.max) {
-        return false;
-    }
-    return true;
-}
-
-
-//Nesting Objects
-let person = {
-    name: "John",
-    address: {
-        street: "Am Nordbahnhof",
-        city: "Berlin"
-    }
-}
-
-// how do we access the person's city? person.address.city
-
 //DOM
 
 /*
@@ -107,9 +47,25 @@ input.style.backgroundColor = "#1782FF";
 
 
 function myButton() {
-    let theInput = document.getElementById("myText");
-    console.log(theInput.value);
-    document.body.style.backgroundColor = color;
+    let inputEl = document.getElementById("myText");
+    console.log("Give me color baby!!!");
+    let color = inputEl.value;  //value is what it is inside the input field
+    let divEl = document.getElementById("myDiv");
+    divEl.textContent = color;
+    divEl.style.backgroundColor = color;
+    inputEl.value = "";  //This remove the value
+
+    let itemEl = document.createElement("li");
+    itemEl.textContent = color;
+    itemEl.style.backgroundColor = color;
+    itemEl.onclick = function(){
+        console.log(color);
+        divEl.style.backgroundColor = color;
+    }
+
+    let listEl = document.getElementById("myList");
+    listEl.appendChild(itemEl);
+   
   }
 
 
@@ -119,6 +75,9 @@ In the onclick attribute of your <button>, call that function
 Inside your function, get the value attribute from your input
 Set the background color of the <div> to the value of your input
 
+ <input type="text" value="hi" id="myText" />
+    <button onclick="myButton()"> Click me</button>
+    <div id="myDiv"> My div </div>
 */
 
 

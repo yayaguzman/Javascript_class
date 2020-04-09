@@ -1,5 +1,33 @@
 //Class 6 = LOOPS
 
+/*< - Less than
+> - Greater than
+<= - Less than or equal to
+>= - Greater than or equal to
+== - Is loosely equal to
+=== - Is strictly equal to
+!= - Is not loosely equal to
+!== - Is not strictly equal to
+*/
+
+//loose equality (==). This operator is used to compare if 2 values have the same value, even if they aren't necessarily the same type.
+
+ 1   ==  1        // true
+"1"  ==  1        // true
+ 1   == '1'       // true
+
+true == true      // true
+true == 'true'    // false
+
+//For 2 values to be strictly equal (===) to each other, they need to not only have the same value, but also must have the same data type:
+
+ 2   ===  2        // true
+"2"  ===  2        // false
+ 2   === '2'       // false
+
+true === true      // true
+true === 'true'    // false
+
 /*WHILE LOOP
 repeats its body while its condition is true:
 
@@ -143,14 +171,19 @@ numM--
 console.log(numM) // => 9
 
 
-//asigment operator   += - addition
-/*-= - subtraction
+/* asigment operator   
++= - addition
+-= - subtraction
 *= - multiplication
-/= - division */
+/= - division 
+*/
+
 let num = 5;
 
 num += 10 //same as: num = num + 10
 console.log(num) // => 15  
+
+
 
 
 
