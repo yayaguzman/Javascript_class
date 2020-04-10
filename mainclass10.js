@@ -42,48 +42,32 @@ input.size = 300;
 input.style.backgroundColor = "#1782FF";
 */
 
-
-
-
-
+// Create an INput field in HTML then write colors in it:
 function myButton() {
     let inputEl = document.getElementById("myText");
     console.log("Give me color baby!!!");
     let color = inputEl.value;  //value is what it is inside the input field
     let divEl = document.getElementById("myDiv");
     divEl.textContent = color;
-    divEl.style.backgroundColor = color;
+    divEl.style.backgroundColor = color; // gives the div the color selected
     inputEl.value = "";  //This remove the value
 
-    let itemEl = document.createElement("li");
-    itemEl.textContent = color;
-    itemEl.style.backgroundColor = color;
-    itemEl.onclick = function(){
+    let itemEl = document.createElement("li"); //creates list rows
+    itemEl.textContent = color; //prints the color
+    itemEl.style.backgroundColor = color; //gives rows the color selected
+    itemEl.onclick = function(){ 
+        // When we click on an item in our list, we want to change 
+        //the background color of the div to that of the item.
         console.log(color);
         divEl.style.backgroundColor = color;
     }
 
     let listEl = document.getElementById("myList");
-    listEl.appendChild(itemEl);
-   
+    listEl.appendChild(itemEl); //this means add itemElement as a child of listElement
+
   }
 
 
-
-   /* Add a function to your JavaScript file
-In the onclick attribute of your <button>, call that function
-Inside your function, get the value attribute from your input
-Set the background color of the <div> to the value of your input
-
- <input type="text" value="hi" id="myText" />
-    <button onclick="myButton()"> Click me</button>
-    <div id="myDiv"> My div </div>
-*/
-
-
-    //<input type="text" value="hi" id="myText" />
-        //<button onclick="myButton()"> Click me</button>
-        //<div id="myDiv">   </div>
 
 
 

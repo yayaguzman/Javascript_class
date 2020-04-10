@@ -140,8 +140,8 @@ let degreesInFahrenheitTotal = degreesInFahrenheit_2 - 32 / 1.8;
 console.log("82 degrees Fahrenheit= " + (degreesInFahrenheit_2 - 32) / 1.8 + " degrees Celsius");
 console.log(degreesInFahrenheitTotal); //first operation should in ()
 
-2 + 2 * 2 = 6
-(2 + 2) * 2 = 8
+//2 + 2 * 2 = 6
+//(2 + 2) * 2 = 8
 
 
 /*Template literals 
@@ -152,9 +152,9 @@ Inside a template literal, you're able to refer to variables or execute code by 
 
 console.log(`10 + 25 = ${10 + 25}`) // => "10 + 25 = 35"
 
-const firstName = 'David';
-const lastName = 'Bowie';
-console.log(`My favorite artist is ${firstName} ${lastName}`) 
+const firstName2 = 'David';
+const lastName2 = 'Bowie';
+console.log(`My favorite artist is ${firstName2} ${lastName2}`) 
 // => "My favorite artist is David Bowie"
 
 let x = 3;

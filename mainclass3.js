@@ -239,15 +239,17 @@ console.log(resultado);
 
 
 //Another option
+
 if(scoreFirstPlayer > scoreSecondPlayer ) {
   console.log("First Player is the winner with" + " " + scoreFirstPlayer + " " + "points");
 }
-if(scoreFirstPlayer === scoreSecondPlayer ) {
+else if(scoreFirstPlayer === scoreSecondPlayer ) {
   console.log("All players are winners!!! with" + " " + scoreSecondPlayer + " " + "points");
 }
-else(scoreFirstPlayer < scoreSecondPlayer ) {
+else{
   console.log("Second Player is the winner with" + " " + scoreSecondPlayer + " " + "points");
 }
+
 
 /*teacher example
 let myAge = 42;

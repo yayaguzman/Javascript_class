@@ -1,5 +1,4 @@
 
-
 //DOM
 
 /*
@@ -11,14 +10,13 @@ Output to a <div> element whether the guessed number is smaller,
 larger or equal to the secret number
 */
 
-
-let myNumber = 56;
-let yourNumberInput = document.getElementById("yourNumber");
+let myNumber = 56; // right number
+let yourNumberInput = document.getElementById("yourNumber");  //user's number
 let showMeResult = document.getElementById("result"); //div
 
 function guessNumber() {
-    let yourGuess = parseInt(yourNumberInput.value);
-//yourGuess = parseInt(yourGuess); 
+    let yourGuess = parseInt(yourNumberInput.value); ////value is the number inside the input field
+//yourGuess = parseInt(yourGuess) converts the input text into a number;&#x2029;
     if (yourGuess === myNumber) {
         showMeResult.textContent ="You Woooooooonnnnn!!! :)";
     // console.log("You Woooooooonnnnn!!! :)");
@@ -31,19 +29,50 @@ function guessNumber() {
     } else {
         showMeResult.textContent = "Your number should be between 0 and 100, no cheating pls :)";
     //console.log("Your number should be between 0 and 100, no cheating pls :)")
+    } 
+
+    let eachGuess = document.createElement("li"); //create each element of the list
+    function printTry(){ //prints the message + number in the input
+        if (yourGuess === myNumber){
+            eachGuess.textContent = ("Correct! " + yourGuess);
+        } else{
+            eachGuess.textContent = ("nope! " + yourGuess);
+        } 
     }
+    printTry(); //Calling the fuction thet prints the number in the input
+      
+
+    let listPrevious = document.getElementById("previous"); //list ID
+    //this means add eachGuess as a child of listElement
+    listPrevious.appendChild(eachGuess);
+
+} 
     
-    
-}
-
-let resultEl = document.createElement("li");
-    resultEl.textContent = showMeResult;
-    let listPrevious = document.getElementById("previous"); //list
-    listPrevious.appendChild(resultEl);
-
-
+    //prints the number in the input + message
+    /*function printTry(){
+        if (yourGuess === myNumber){
+            textContent = ("Yes!" + yourGuess);
+        } else{
+            textContent = ("nope! " + yourGuess);
+        } 
+    }
+    printTry();
+    let listPrevious = document.getElementById("previous"); //list ID
+    //this means add eachGuess as a child of listElement
+    listPrevious.appendChild(eachGuess);
 
 /* 
+
+let eachGuess = document.createElement("li"); //create each element of the list
+function print(){
+    if (yourGuess === myNumber){
+        eachGuess.textContent = ("Yes!" + yourGuess);
+    } else{
+        eachGuess.textContent = ("nope! " + yourGuess);
+    } 
+}
+
+
 let listPrevious = document.getElementById("previous"); //list
     listPrevious.appendChild(resultEl);
  let resultEl = document.createElement("li");

@@ -5,7 +5,6 @@ Special characters:
 \n: new line
 \t: tab
 
-
 OPERATORS
 Numerical + - * /
 Comparison === strict equality  !== strict inequality  < > <= >= greater / less or equal
@@ -13,16 +12,8 @@ Logical || or  && and ! not
 Combined 	+= -= *= /= ++   
 
 Operator ++ and -- increase (or decrease) the value of a variable by 1
-*/
-
-//---------------------------------------------------------------------------------
 
 
-// class 4- 
-//Functions
-//Set of statments that either perform a task or calculate a value
-
-/*
 rules of if, else if, else
 if (condition1) {
   // some code ...
@@ -33,8 +24,16 @@ if (condition1) {
 } else {
   // even more code ...
 }
+JavaScript will continue from here.
+*/
 
-// JavaScript will continue from here.
+//---------------------------------------------------------------------------------
+
+// class 4- 
+//Functions
+//Set of statments that either perform a task or calculate a value
+
+/*
 EXERCISE
 Simple program that calculates the bonus an employee will get at the end of the year.
 (regular day: 1€, extra: 3€ bonus)
@@ -71,6 +70,8 @@ function myFunction() {
   console.log("I am in a function!");
 }
 
+
+
 /*
 To create a function:
 - function
@@ -82,12 +83,11 @@ To create a function:
 function sayHello() { 
   //the block where we have our code
   console.log("Hello There!");
-
   console.log("...");
-
   console.log("General Kenobi!");
 }
 
+You can call the function like this:
 sayHello();
 */
 
@@ -100,14 +100,23 @@ sayHello();
 //The function sayHello does not require any parameters that is why the parenthesis () are empty.
 //When no return, consol says indefined
 
+
 // ask if a parameter is a variable and if you can name a variable with the same name
 function greet(name){
   console.log("Hello " + name + "!");
 }
 greet("Bob");  // "Hello Bob !"
-
 //The function greet takes one parameter: name 
 //that is why we write "Bob" in the parenthesis. we are giving the value "Bob" to the function.
+
+//functions can also return some value, we can save that value in a variable to use it later!
+function giveMe5() {
+  return 5; 
+}
+
+let number = giveMe5();
+console.log(number); // 5
+
 
 /*
 EXERCISE
@@ -121,6 +130,7 @@ let degreesInCelsius= 28;
 // let degreesInFahrenheit= ???; Fahrenheit = Celsius multiplied by 1.8 plus 32
 let degreesInFahrenheit = degreesInCelsius * 1.8 + 32; 
 console.log("28 degrees Celsius= " + degreesInFahrenheit + " degrees Fahrenheit");
+//28 degrees Celsius= 82.4 degrees Fahrenheit
 
 
 function celsiusToFahrenheit(degreesCelsius) {
@@ -128,8 +138,8 @@ function celsiusToFahrenheit(degreesCelsius) {
   return degreesFahrenheit;
 }
 
-console.log("28 degrees: " + celsiusToFahrenheit(28));
-console.log("32 degrees: " + celsiusToFahrenheit(32));
+console.log("28 degrees Celsius: " + celsiusToFahrenheit(28)); //28 degrees Celsius: 82.4
+console.log("32 degrees Celsius: " + celsiusToFahrenheit(32)); //32 degrees Celsius: 89.6
 
 /*
 Exercise
@@ -147,9 +157,9 @@ function min(number1, number2) {
   }
 }
 
-console.log('min of 1 and 2 is ' + min(1, 2));
-console.log('min of 100 and 99 is ' + min(100, 99));
-console.log('min of -10 and 0 is ' + min(-10, 0));
+console.log('min of 1 and 2 is ' + min(1, 2));       //min of 100 and 99 is 99
+console.log('min of 100 and 99 is ' + min(100, 99)); //min of 100 and 99 is 99
+console.log('min of -10 and 0 is ' + min(-10, 0)); //min of -10 and 0 is -10
 
 
 
