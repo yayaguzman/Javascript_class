@@ -32,16 +32,12 @@ function guessNumber() {
     } 
 
     let eachGuess = document.createElement("li"); //create each element of the list
-    function printTry(){ //prints the message + number in the input
-        if (yourGuess === myNumber){
-            eachGuess.textContent = ("Correct! " + yourGuess);
-        } else{
-            eachGuess.textContent = ("nope! " + yourGuess);
-        } 
-    }
-    printTry(); //Calling the fuction thet prints the number in the input
-      
-
+         //prints the message + number in the input
+    if (yourGuess === myNumber){
+        eachGuess.textContent = ("Correct! " + yourGuess);
+    } else{
+        eachGuess.textContent = ("nope! " + yourGuess);
+    } 
     let listPrevious = document.getElementById("previous"); //list ID
     //this means add eachGuess as a child of listElement
     listPrevious.appendChild(eachGuess);
