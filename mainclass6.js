@@ -119,8 +119,8 @@ for (let o = 1; o < 6; o++) {  //same 3 parts in () and separated by ;
  
   //EXERCISE 2= Count down from 10 to 0 and output it on console: backwards
 
-  for (let countDownBack=10; countDownBack > 0; countDownBack--) {
-    console.log(countDownBack);
+  for (let i=10; i > 0; i--) {
+    console.log(i);
   }
 
 
@@ -178,10 +178,10 @@ console.log(numM) // => 9
 /= - division 
 */
 
-let num = 5;
+let num5 = 5;
 
-num += 10 //same as: num = num + 10
-console.log(num) // => 15  
+num5 += 10 //same as: num = num + 10
+console.log(num5) // => 15  
 
 
 

@@ -119,8 +119,7 @@ function numberOfKids(motherNames, kids){
 
 for(let i=0; i< theirKids.length; i++){
   numberOfKids(mothers[i], theirKids[i]);
-  if (theirKids[i].valueOf === 1) {
-   kidsPlural = "children";
-  }
-  
+  if (theirKids[i] === 1) {
+   kidsPlural = "child";
+  }  
 }

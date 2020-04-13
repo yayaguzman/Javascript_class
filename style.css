@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body, html{
+	
+	font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    text-align:center;
+}
+
+
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	margin: 31px 20px;
+	display: inline-block;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+nav ul li a:hover{
+	color: #FF5A5A;
+}
+
+.btn_download{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #FF5A5A;
+	height: 60px;
+	border-radius: 30px;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 18px;
+	height: 100%; /*avoid my cta to become bigger or the height to be bigger */
+	display: inline-block;
+}
+
+.btn_download:hover{
+	color: white;
+	background-color: #073A68;
+}
+
+
+.icon_2{
+	background-image: url(img/icon_2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 249px;
+	height: 114px;
+	margin-bottom: 30px;
+}
+.second, .third, .fourth, .fifth, .sixth{
+	background-color: #EDEDED;
+	width: 320px;
+	height: 60px;
+	border-radius: 5px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	padding: 8px;
+	font-size: 20px;
+	line-height: 20px;
+}

@@ -10,9 +10,10 @@ Output to a <div> element whether the guessed number is smaller,
 larger or equal to the secret number
 */
 
-let myNumber = 56; // right number
+let myNumber = Math.floor(Math.random() * 101); // right number
 let yourNumberInput = document.getElementById("yourNumber");  //user's number
 let showMeResult = document.getElementById("result"); //div
+console.log(myNumber);
 
 function guessNumber() {
     let yourGuess = parseInt(yourNumberInput.value); ////value is the number inside the input field
