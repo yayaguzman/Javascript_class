@@ -195,7 +195,7 @@ If the number is divisible by both 3 and 5, print “FizzBuzz” instead
 */
 
 //let fizz="Fizz";
-for (var fizz = 1; fizz<101; fizz++) {
+for (let fizz = 1; fizz<101; fizz++) {
   if (fizz%5 === 0 && fizz%3 === 0) {
     console.log("FizzBuzz");
   }

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body, html{
+	
+	font-family: 'Montserrat', sans-serif;
+	background: #FFFFFF;
+	font-size: 14px;
+} 
+h1{
+	margin: 20px;
+}
+
+#all {
+	margin: 0 20px 20px 20px;
+	padding: 30px;
+	position: relative;
+	width: 250px;
+	display: inline-block;
+	float:left;
+	background-color:  #DFEFFC;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  #contactsListSaved{
+	display: inline-block;
+	float:left;
+	width: 550px;
+	margin: 0 20px 20px 20px;
+	padding: 30px;
+	color: #000000;
+	position: absolute;
+  }
+  
+  #button {
+	position: relative;
+	display: block;
+	top: 10;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	background-color: #4285F4;
+	color: #ffffff;
+	cursor: pointer;
+	width: 100%;
+  }
+
+  #button:hover {
+	background-color: #176AF6;
+  }
+
+  #btndelete {
+	padding: 5px 10px;
+	margin-left: 20px;
+	width: 50px;
+	height: 10px;
+	font-size: 10px;
+	text-align: center;
+	background-color: #EE2660;
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: none;
+  }
+
+  
+
+  #divider{
+	  width: 100%;
+	  height: 1px;
+	  background-color: #000000;
+  }
+
+  .in{
+	height: 24px;
+	width: 100%;
+	padding: 5px;
+  }
+
+
+
+  input{
+
+  }
+  

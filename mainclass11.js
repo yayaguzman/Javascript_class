@@ -35,15 +35,27 @@ function guessNumber() {
     let eachGuess = document.createElement("li"); //create each element of the list
          //prints the message + number in the input
     if (yourGuess === myNumber){
-        eachGuess.textContent = ("Correct! " + yourGuess);
-    } else{
-        eachGuess.textContent = ("nope! " + yourGuess);
+        eachGuess.textContent = ("Correct!, you guessed the number " + yourGuess + " " + "in " + " " +  "#" + " tries");
+    } else if (yourGuess > myNumber) {
+        eachGuess.textContent = ("nope! bigger " + yourGuess);
     } 
+    else{
+        eachGuess.textContent = ("nope! smaller " + yourGuess);
+    }
     let listPrevious = document.getElementById("previous"); //list ID
     //this means add eachGuess as a child of listElement
     listPrevious.appendChild(eachGuess);
 
+    document.getElementById("yourNumber").value = ""; // T;his clears input field after submit
+
 } 
+
+let tries = document.getElementById("previous");
+for (let i = 0; i < tries.length; i++){
+    console.log(tries)
+}
+   
+
     
     //prints the number in the input + message
     /*function printTry(){

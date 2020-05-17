@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body, html{
+	
+	font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    text-align:center;
+}
+
+.title{
+	padding-top: 100px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+#btn_1{
+	color: #000000;
+	background-color: #FF5BBE;
+	height: 60px;
+	border-radius: 30px;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#btn_2{
+	color: #000000;
+	background-color: #FFDB70;
+	border-radius: 30px;
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#btn_3{
+	color: #000000;
+	background-color: #CCEDFF;
+	border-radius: 30px;
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#btn_4{
+	color: #000000;
+	background-color: #FF5BBE;
+	height: 60px;
+	border-radius: 30px;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: block;
+}
+
+ul li{
+	
+	text-align: center;
+	padding: 30px 10px 40px 10px;
+	display: inline-block;
+}
+
+#thanks{
+	font-size:44px; 
+}
+
+#foryour{
+	font-size:64px; 
+}
+
+#cool{
+	font-size:34px; 
+}

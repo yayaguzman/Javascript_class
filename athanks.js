@@ -2,53 +2,48 @@
 //thank you so much for teaching us heart  you guys are amazing :)
 
 function changeBg() {
-  document.body.style.backgroundColor = "yellow";
+    document.body.style.backgroundColor = "#1782FF";
 }
+
+let showMeThanks = document.getElementById("thanks")
+
+function thankU() {
+    for (i = 0; i < 4; i++) {
+        showMeThanks.textContent += "+ + + 👏 Thank you + + + ";
+    }
+}
+
+let showSoMuch = document.getElementById("foryour")
+
+function soMuch() {
+    showSoMuch.textContent = " - - - 🤓 so much 🤓 - - -";
+}
+
+
+
+
+
+function forYour() {
+    let showMeCool = document.getElementById("cool")
+    let nice = ['for your dedication', ' time', ' and cool classes 😍'];
+    for (let i= 0; i < nice.length; i++){
+        showMeCool.textContent = nice;
+        }
+   
+    console.log("you guys are amazing :)")
+}
+
+
 
 /*
+function forYour() {
+    for (let i= 0; i < nice.length; i++){
+    message.push(nice[i]);
+    }
 
-
-let temperature3 = 35;
-
-
-for (i = 0; i<10; i++){
-  textContent("Thank you")
+    for (let i= 0; i < message.length; i++){
+        showMeCool.textContent = message;
+     
 }
-
-let more = ["so", "good", "much", "great"];
-more.push("for");
-console.log(more[0] + " " + more[2] + " " + more[4]);
-
-
-
-
-if (temperature3 > -100 && temperature3 < 5) {
-  console.log("it is cold");
-} else if (temperature3 > 5 && temperature3 < 20) {
-  console.log("the weather is ok, not too cold and not too hot");
-} else if (temperature3 > 20 && temperature3 < 30) {
-  console.log("it is getting hot!");
-} else {
-  console.log("it is super hot!!!");
-}
-
-let eachGuess = document.createElement("li"); //create each element of the list
-//prints the message + number in the input
-if (yourGuess === myNumber){
-eachGuess.textContent = ("Correct! " + yourGuess);
-} else{
-eachGuess.textContent = ("nope! " + yourGuess);
-} 
-let listPrevious = document.getElementById("previous"); //list ID
-//this means add eachGuess as a child of listElement
-listPrevious.appendChild(eachGuess);
-
-} 
-
-
-
 */
-
-
-
 
